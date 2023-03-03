@@ -1,0 +1,223 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>portfolio</title>
+    <!-- サイトの説明　124文字程度に収める-->
+    <meta name="description" content="嶋　邦将のportfolioです。サンプル">
+    <!-- viewportで指定することでPC/モバイルの領域を指定できる -->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    
+    <!--google font-->
+    
+    <link rel="stylesheet" href="slick/slick-theme.css">
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="css/neon.css">
+    
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+    <script src="slick/slick.min.js"></script>
+    <script src="slick/sample.js"></script>
+    
+    <!--/slickをプラグイン-->
+    
+    <!---js css change-->
+  <link id="PageStyleSheet" rel="stylesheet" href="css/neon.css" />
+    <script type="text/javascript">
+        function changeStyleSheet() {
+          var elem = document.getElementById("PageStyleSheet");
+          elem.href = "css/neon.css";
+        }
+
+        function changeStyleSheet2() {
+            var elem = document.getElementById("PageStyleSheet");
+            elem.href = "css/main.css";
+          }
+    </script>
+
+
+    <script>
+        $(function() {
+          $('.slider').slick({
+            autoplay:true,
+            autoplaySpeed : 1000,
+            dots:true
+          });
+        });
+  </script>
+    <!--/js csschange  -->
+    <!--js-->
+
+    <script type="text/javascript" src="js/index.js"></script>
+
+   
+     <!--/js-->
+
+     
+
+     <header id="header">
+      <h5 class="1a"><a href="#"><span classs="text"><span class="smoothtext">SHIMA</span></span></a></h5>
+      
+
+      <div class="fixed">
+          <canvas id="fixed"></canvas>
+          <canvas id="particle"></canvas>
+      </div>    
+
+      <!--ネオンフォント -->
+    <div class="neontitle">
+    <h1 >portfolio</h1>
+    </div>
+    <!--ネオンフォント -->
+
+    
+      <div class="neon-circle">
+        
+          
+        </div>
+      </div>
+    </div>
+
+    
+  </header>
+</head>
+
+<body>
+  
+
+ 
+
+    <!--menu-->
+    
+    
+<div class="openbtn1"><span></span><span></span><span></span></div>
+<nav id="g-nav">
+<div id="g-nav-list"><!--ナビの数が増えた場合縦スクロールするためのdiv※不要なら削除-->
+<ul>
+<li><a href="#header">Top</a></li>  
+<li><a href="#about">About</a></li>  
+<li><a href="#works">works</a></li>  
+<li><a href="#contact">Contact</a></li>  
+</ul>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="js/nav.js"></script>
+</div>
+</nav>
+    
+
+    
+        
+   
+    
+    
+
+    <main id="style2">    
+
+        <section id="about" class="fixed">
+            <div class="inner">
+            <h2><span class="smoothText"><span class="smoothTextTrigger">About</span></span></h2>
+            <div class="about-list smoothTrigger">
+            <ul class="flex delayScroll">
+                        <li class="box">
+                            <dl>
+                                <dt>名前</dt><dd>嶋　邦将</dd>
+                            </dl>
+                            </li>
+                            <li class="box">
+                            <dl>
+                                <dt>所在地</dt><dd>福岡県福岡市</dd>
+                            </dl>
+                            </li>
+                            <li class="box">
+                            <dl>
+                                <dt>生年月日</dt><dd>2001年7月10日</dd>
+                            </dl>
+                            </li>
+                            <li class="box">
+                            <dl>
+                                <dt>趣味</dt><dd>12345</dd>
+                            </dl>
+                            </li>
+                    </ul>
+            <!--line--></div>     
+    </section>
+
+    <section id="works" class="fixed">
+        <div class="inner">
+        <h2><span class="worksname"><span class="worksname2">works</span></span></h2>
+        <div class="slider">        
+            <div class="img"><img src="img/ramen.jpg" alt=""><p>fukuoka-ramen-map</p></div>
+            <div class="img"><img src="img/111.jpg" alt=""><p>portfolio</p></div>
+            <div class="img"><img src="img/111.jpg" alt=""><p>portfolio</p></div>
+            <div class="img"><img src="img/111.jpg" alt=""><p>portfolio</p></div>
+            <div class="img"><img src="img/111.jpg" alt=""><p>portfolio</p></div>
+        </div>
+      </section>
+     
+    </div>
+        
+
+    <section id="contact" class="fixed">
+        <div class="inner">
+        <h2><span class="smoothText"><span class="smoothTextTrigger">Contact</span></span></h2>
+        <div class="flex delayScroll">
+       <div class="box"> 
+        <p class="tel"><span class="smoothText"><span class="smoothTextTrigger">TEL 012-345-678</span></span></a></p>  
+        <p class="mail"><a href="mailto:ckg20060@st.ckg.ac.jp"><span class="smoothText"><span class="smoothTextTrigger">ckg20060@st.ckg.ac.jp</span></span></a></p>
+       </div>
+       </div>
+      </div> 
+    </section>
+
+</main>
+<!-- CSS change -->
+<footer id="change-btn">
+    <div class="paragraph-wrapper">
+    <div class="change-btn">
+    <p><a href="javascript:changeStyleSheet();">neon</a></p>
+    <small><a href="javascript:changeStyleSheet2();">main</a></small>
+</div>
+</footer>
+
+
+
+  <div class="inner2">
+      <h3><a href="#top">TOP</a></h3>
+      <nav>
+          <ul>
+              <li><a href="#about">ABOUT</a></li>
+              <li><a href="#works">WORKS</a></li>
+              <li><a href="#contact">CONTACT</a></li>
+          </ul>
+      </nav>
+      <p> 2022 shima  portfolio</p>
+  </div>
+  
+
+
+
+<!-- /CSS change  -->
+
+<!--  js  -->
+<!--jQuery-->
+
+
+
+<!--JS-->
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+ <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<script src="js/index.js"></script>
+
+
+<!-- /js  -->
+
+</body>
+</html>
