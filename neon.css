@@ -1,0 +1,858 @@
+@charset "utf-8";
+@import url(https://fonts.googleapis.com/css?family=Exo+2:200i);
+:root {
+  /* Base font size */
+  font-size: 10px;   
+  
+  /* Set neon color */
+  --neon-text-color: rgba(16, 0, 186, 0.826);
+  --neon-border-color: rgb(255, 255, 255);
+}
+
+
+
+h1 {
+    
+  font-size: 12rem;
+  font-style: italic;
+  border-radius: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+  /* 点滅 */
+  animation: flicker 1.20s infinite alternate;     
+  margin-top: -80vh;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  color: #ffffff;
+
+}
+
+h1::-moz-selection {
+  background-color: var(--neon-border-color);
+  color: var(--neon-text-color);
+}
+
+h1::selection {
+  background-color: var(--neon-border-color);
+  color: var(--neon-text-color);
+}
+
+h1:focus {
+  outline: none;
+}
+
+/* Animate neon flicker */
+@keyframes flicker {
+    
+    0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+      
+        text-shadow:
+            -0.2rem -0.2rem 1rem rgb(0, 133, 157),
+            0.2rem 0.2rem 1rem rgb(140, 0, 255),
+            0 0 2rem var(--neon-text-color),
+            0 0 4rem var(--neon-text-color),
+            0 0 6rem var(--neon-text-color),
+            0 0 8rem var(--neon-text-color),
+            0 0 10rem var(--neon-text-color);
+        
+        box-shadow:
+            0 0 .5rem rgb(0, 34, 255),
+            inset 0 0 .5rem rgba(0, 255, 217, 0.759),
+            0 0 2rem var(--neon-border-color),
+            inset 0 0 2rem var(--neon-border-color),
+            0 0 4rem var(--neon-border-color),
+            inset 0 0 4rem var(--neon-border-color);        
+    }
+    
+    20%, 24%, 55% {        
+        text-shadow: none;
+        box-shadow: none;
+    }    
+}
+
+_:-ms-lang(x)::-ms-backdrop, body{/*IE11用ハック*/
+    overflow-x: hidden;
+}
+
+@media screen and (max-width:768px) {
+    body{
+        font-size:0.8rem;
+        }
+    }
+    
+    *{box-sizing: border-box;}
+
+
+
+
+
+
+
+/*Smooth Scroll*/
+html{
+  scroll-behavior: smooth;
+}
+
+
+
+/*========= 画面遷移のためのCSS ===============*/
+
+/*画面遷移アニメーション*/
+
+body{
+  
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.85;
+  -webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+-webkit-text-size-adjust: 100%; 
+word-wrap: break-word; 
+  overflow-x: hidden;
+  background: #000000;
+}
+
+
+
+@media screen and (max-width:768px) {
+  body{
+      font-size:1rem;
+      
+      }
+  }
+
+
+header  a{
+  margin: 0 0 0 40px;
+  font-size: 40px;
+  color: #ffffff;
+  text-shadow: 
+  .1vw 0vw .25vw #28D7FE, .2vw 0vw .25vw #28D7FE, .4vw 0vw .25vw #28D7FE, 
+  .1vw 0vw .1vw #1041FF, .2vw 0vw 0vw #1041FF, .4vw 0vw 0vw #1041FF,
+  .1vw 0vw .1vw #1041FF, .2vw 0vw .1vw #1041FF, .4vw 0vw 0vw #1041FF,
+  .1vw 0vw .8vw #1041FF, .2vw 0vw .8vw #1041FF, .4vw 0vw .8vw #1041FF, .2vw 0vw .5vw #1041FF,
+  .1vw 0vw .5vw #1041FF, .2vw 0vw .5vw #1041FF, .4vw 0vw .5vw #1041FF, 
+  .1vw 0vw 10vw #1041FF, .2vw 0vw 10vw #1041FF, .4vw 0vw 10vw #1041FF;
+  color: #ffffff;
+  }
+
+  
+
+
+
+  
+
+
+_:-ms-lang(x)::-ms-backdrop, body{/*IE11用ハック*/
+  overflow-x: hidden;
+}
+
+@media screen and (max-width:768px) {
+  body{
+      font-size:0.8rem;
+      }
+  }
+  
+  *{box-sizing: border-box;}
+
+ul{
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+
+
+
+
+
+h1,h2,h3,#img,#header,#contact.tel,#contact.mail,#change-btn,nav,.hometitle
+#splash-logo{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+#header .fixed{
+  display: flex;
+  justify-content: center;
+  align-items: hidden;
+  position: relative;
+}
+
+
+
+
+
+
+h2{
+  font-size:4.5rem;
+  letter-spacing: 0.2rem;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0 0 2vh 0;
+  color: #000000;
+}
+
+:-ms-lang(x)::-ms-backdrop, #img h2{/*IE11用ハック*/
+  padding:20vh 0 0 0;
+}
+
+@media screen and (max-width:768px) {
+  h2{
+      font-size: 2rem;
+  }
+  }
+
+.fixed{
+  z-index:1;
+  height: 100vh;
+  width:100%;
+  padding:0 7vw;
+}    
+
+@media screen and (max-width:768px) {
+      #about.fixed{
+      height: auto;
+    }
+}
+
+@media screen and (max-width:540px) {
+.fixed{
+    padding:0 60px;
+    }
+    
+}
+
+
+
+@media screen and (max-width:768px) {
+#img{
+  padding:0 0 18vh 0; 
+}
+}
+
+#about{
+  color: #000000;
+  margin:100vh  0px 0px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: bottom;
+  text-align: center;
+  
+  text-shadow: 
+  -.1vw 0vw .25vw #5f8dd3, -.2vw 0vw .25vw #5243d6, -.4vw 0vw .25vw #A9FFDC, 
+  -.1vw 0vw .1vw #0067f7, -.2vw 0vw .1vw #0067f7, -.4vw 0vw .1vw #0067f7,
+  -.1vw 0vw .8vw #0067f7, -.2vw 0vw .8vw #0067f7, -.4vw 0vw .8vw #0067f7, .2vw 0vw .5vw #0067f7,
+  -.1vw 0vw .5vw #0067f7, -.2vw 0vw .5vw #0067f7, -.4vw 0vw .5vw #0067f7, 
+  -.1vw 0vw 10vw #243aff, -.2vw 0vw 10vw #0112ff, -.4vw 0vw 10vw #243aff;
+  
+}
+
+
+
+#about .about-list{
+  width:50vw;
+  color: #ffffff;
+  margin: 0 auto;
+  text-shadow: 
+  -.1vw 0vw .25vw #5f8dd3, -.2vw 0vw .25vw #5243d6, -.4vw 0vw .25vw #A9FFDC, 
+  -.1vw 0vw .1vw #0067f7, -.2vw 0vw .1vw #0067f7, -.4vw 0vw .1vw #0067f7,
+  -.1vw 0vw .8vw #0067f7, -.2vw 0vw .8vw #0067f7, -.4vw 0vw .8vw #0067f7, .2vw 0vw .5vw #0067f7,
+  -.1vw 0vw .5vw #0067f7, -.2vw 0vw .5vw #0067f7, -.4vw 0vw .5vw #0067f7, 
+  -.1vw 0vw 10vw #243aff, -.2vw 0vw 10vw #0112ff, -.4vw 0vw 10vw #243aff;
+}
+/*aboutlistのライン*/
+#about .about-list li{
+  border-bottom: 2px solid rgb(3, 33, 255);
+  margin:0 0 15px 0;
+  padding: 0 0 15px 0;
+  font-size:2rem;
+  
+}
+
+#about .about-list dl{
+   display: flex;
+  justify-content: space-between;
+}
+
+#about .about-list dt{
+  width:30vw;
+  padding: 0 0 0 2vw;
+  white-space: nowrap;
+}
+
+#about .about-list dd{
+  width:68vw;
+}
+
+
+@media screen and (max-width:768px) {
+#about{
+  padding: 0 0 0 0;
+}
+  
+#about h2{
+  padding:10vh 0 0 0;  
+}
+
+#about .about-list{
+  width:60vw;
+  }
+}
+.box{
+opacity: 0;
+}
+
+
+/*　works */
+#works{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  
+ 
+  
+  
+  text-shadow: 
+  -.1vw 0vw .25vw #5f8dd3, -.2vw 0vw .25vw #5243d6, -.4vw 0vw .25vw #A9FFDC, 
+  -.1vw 0vw .1vw #0067f7, -.2vw 0vw .1vw #0067f7, -.4vw 0vw .1vw #0067f7,
+  -.1vw 0vw .8vw #0067f7, -.2vw 0vw .8vw #0067f7, -.4vw 0vw .8vw #0067f7, .2vw 0vw .5vw #0067f7,
+  -.1vw 0vw .5vw #0067f7, -.2vw 0vw .5vw #0067f7, -.4vw 0vw .5vw #0067f7, 
+  -.1vw 0vw 10vw #243aff, -.2vw 0vw 10vw #0112ff, -.4vw 0vw 10vw #243aff;
+
+
+
+  -moz-box-shadow:  inset 0px 0px 98px 8px rgb(255, 255, 255);
+  -webkit-box-shadow: inset 0px 0px 98px 8px rgb(255, 255, 255);
+  
+  background: 0;
+  border-radius: 13vw;
+  box-shadow: 10px 10px 10px 8px rgb(0, 0, 0), 0px 0px 8px 10px #0040ff, inset 0px 0px 500px 4px rgb(77, 130, 236), 0px 0px 98px 8px rgb(0, 30, 255), inset 0px 0px 98px 8px rgb(255, 255, 255);
+  height: 50vh;
+  width: 75vw;
+  margin-top: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+  
+
+  
+
+}
+
+h2{
+  font-size: 5vh;
+  margin-bottom: -1vh;
+}
+
+
+.slider p{
+  margin-top: auto;
+  font-size: 20px;
+  
+}
+
+
+
+/* スライダーの写真 */
+.slider img{
+  width: auto;
+  height: 27vh;
+  margin-top: 1vh;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2vh;
+  z-index: 10;
+
+  
+}
+/* ボタン要素の大きさ調整 */
+.slick-prev,
+.slick-next{
+  width: 190px;
+  height: 60px;
+  z-index: 4;
+}
+/* 位置調整、重なり方調整 */
+.slick-prev{
+  left: -60px;
+  top: 18vh;
+  
+  
+}
+/* 位置調整 */
+.slick-next{
+  right: -60px;
+  top: 18vh;
+  
+}
+/* 矢印の大きさと色調整 */
+.slick-prev:before,
+.slick-next::before{
+  font-size: 60px;
+  color:rgb(255, 255, 255);
+ 
+  
+  
+}
+
+@media screen and (max-width:768px) {
+#img{
+      padding:0 0 1vh 0; 
+}
+
+@media screen and (max-width:500px) {
+
+#img .img-area{
+  display: block;
+}}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+/* contact */
+
+#contact{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* 文字の傾き */
+  transform: matrix3d(0.9,0,9.64,.001,0.00,1,0.00,0,-0.94,0,0.9,0,0,0,10,1);
+  text-shadow: 
+  -.1vw 0vw .25vw #5f8dd3, -.2vw 0vw .25vw #5243d6, -.4vw 0vw .25vw #A9FFDC, 
+  -.1vw 0vw .1vw #0067f7, -.2vw 0vw .1vw #0067f7, -.4vw 0vw .1vw #0067f7,
+  -.1vw 0vw .8vw #0067f7, -.2vw 0vw .8vw #0067f7, -.4vw 0vw .8vw #0067f7, .2vw 0vw .5vw #0067f7,
+  -.1vw 0vw .5vw #0067f7, -.2vw 0vw .5vw #0067f7, -.4vw 0vw .5vw #0067f7, 
+  -.1vw 0vw 10vw #243aff, -.2vw 0vw 10vw #0112ff, -.4vw 0vw 10vw #243aff;
+
+  background: rgb(255, 255, 255);
+  border-radius: 9vw;
+  box-shadow: 5px 5px 15px 15px rgb(12, 33, 137), 0px 0px 8px 10px #ffffff, inset 0px 0px 8px 4px rgb(69, 63, 144), 0px 0px 98px 8px rgb(0, 0, 0), inset 0px 0px 98px 198px rgb(255, 255, 255);
+ 
+  
+  margin: 120vh 100px 0px 55px;
+  height: 40rem;
+ 
+}
+
+
+
+
+
+#contact .tel,
+#contact .mail{
+  font-size: 7rem; 
+  margin: 0 0 1vh 0;
+  
+ 
+  
+ 
+}
+
+#contact .mail{
+  margin:0 0 2vh 0;
+  
+ 
+}
+
+#contact .mail a{
+  margin:0 0 2vh 0;
+  
+  
+}
+
+#contact .sns-link li{
+  display: inline-block;
+  margin: 0 10px;
+}
+
+#contact .sns-link li img{
+   width:30px;   
+}
+
+
+@media screen and (max-width:768px) {
+  #ccontact{
+      padding: 2vh 0 0 0;
+  }
+}
+@media screen and (max-width:768px) {
+#contact .tel,
+#contact .mail{
+  font-size: 1.9rem;
+}
+}
+
+/*style2*/
+#change-btn small{
+  position: fixed;
+  display: block;
+  left: 0;
+  top: 52%;
+  font-size:2.5em;
+  text-align:center;
+  line-height:1;
+  transform: rotate(-90deg);
+  text-transform: uppercase;
+  z-index: 999;
+  letter-spacing: 0.1em;
+  
+  /*外枠*/
+  text-shadow: 
+  .1vw 0vw .25vw #28D7FE, .2vw 0vw .25vw #28D7FE, .4vw 0vw .25vw #28D7FE, 
+  .1vw 0vw .1vw #ffffff, .2vw 0vw 0vw #1041FF, .4vw 0vw 0vw #1041FF,
+  .1vw 0vw .1vw #1041FF, .2vw 0vw .1vw #1041FF, .4vw 0vw 0vw #1041FF,
+  .1vw 0vw .8vw #1041FF, .2vw 0vw .8vw #1041FF, .4vw 0vw .8vw #1041FF, .2vw 0vw .5vw #1041FF,
+  .1vw 0vw .5vw #1041FF, .2vw 0vw .5vw #1041FF, .4vw 0vw .5vw #1041FF, 
+  .1vw 0vw 10vw #1041FF, .2vw 0vw 10vw #1041FF, .4vw 0vw 10vw #1041FF;
+  color: #28D7FE;
+}
+
+
+/*style1*/
+#change-btn p{
+  position: fixed;
+  display: block;
+  right: 0;
+  top: 48%;
+  font-size:2.5em;
+  text-align:center;
+  line-height:1;
+  transform: rotate(90deg);
+  text-transform: uppercase;
+  z-index: 999;
+  
+  text-shadow: 
+  .1vw 0vw .25vw #28D7FE, .2vw 0vw .25vw #28D7FE, .4vw 0vw .25vw #28D7FE, 
+  .1vw 0vw .1vw #1041FF, .2vw 0vw 0vw #1041FF, .4vw 0vw 0vw #1041FF,
+  .1vw 0vw .1vw #1041FF, .2vw 0vw .1vw #1041FF, .4vw 0vw 0vw #1041FF,
+  .1vw 0vw .8vw #1041FF, .2vw 0vw .8vw #1041FF, .4vw 0vw .8vw #1041FF, .2vw 0vw .5vw #1041FF,
+  .1vw 0vw .5vw #1041FF, .2vw 0vw .5vw #1041FF, .4vw 0vw .5vw #1041FF, 
+  .1vw 0vw 10vw #1041FF, .2vw 0vw 10vw #1041FF, .4vw 0vw 10vw #1041FF;
+  color: #28D7FE;
+}
+
+
+a{
+  text-decoration: none;
+}
+
+/*リストのレイアウト設定*/
+
+
+
+/*========= ナビゲーションのためのCSS ===============*/
+
+#g-nav{
+  font-size: 30px;
+  /*position:fixed;にし、z-indexの数値を大きくして前面へ*/
+  position:fixed;
+  z-index: 99999;
+  /*ナビのスタート位置と形状*/
+  top:-110%;
+  left:0;
+   width:100%;
+  height: 100vh;/*ナビの高さ*/
+  background:rgb(0, 0, 0);
+  /*動き*/
+  transition: all 0.4s;
+  text-shadow: 
+  .1vw 0vw .25vw #28D7FE, .2vw 0vw .25vw #28D7FE, .4vw 0vw .25vw #28D7FE, 
+  .1vw 0vw .1vw #1041FF, .2vw 0vw 0vw #1041FF, .4vw 0vw 0vw #1041FF,
+  .1vw 0vw .1vw #1041FF, .2vw 0vw .1vw #1041FF, .4vw 0vw 0vw #1041FF,
+  .1vw 0vw .8vw #1041FF, .2vw 0vw .8vw #1041FF, .4vw 0vw .8vw #1041FF, .2vw 0vw .5vw #1041FF,
+  .1vw 0vw .5vw #1041FF, .2vw 0vw .5vw #1041FF, .4vw 0vw .5vw #1041FF, 
+  .1vw 0vw 10vw #1041FF, .2vw 0vw 10vw #1041FF, .4vw 0vw 10vw #1041FF;
+  color: #28D7FE;
+
+}
+
+/*アクティブクラスがついたら位置を0に*/
+#g-nav.panelactive{
+  top: 0;
+}
+
+/*ナビゲーションの縦スクロール*/
+#g-nav.panelactive #g-nav-list{
+  /*ナビの数が増えた場合縦スクロール*/
+  position: fixed;
+  z-index: 999; 
+  width: 100%;
+  height: 100vh;/*表示する高さ*/
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/*ナビゲーション*/
+#g-nav ul {
+  /*ナビゲーション天地中央揃え*/
+  position: absolute;
+  z-index: 999;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+
+/*リストのレイアウト設定*/
+
+#g-nav li{
+list-style: none;
+  text-align: center; 
+}
+
+#g-nav li a{
+color: rgb(255, 255, 255);
+text-decoration: none;
+padding:10px;
+display: block;
+text-transform: uppercase;
+letter-spacing: 0.1em;
+font-weight: bold;
+}
+
+/*========= ボタンのためのCSS ===============*/
+.openbtn1{
+position:fixed;
+z-index: 999999;/*ボタンを最前面に*/
+top:25px;
+right: 20px;
+cursor: pointer;
+  width: 80px;
+  height:80px;
+  
+}
+
+
+/*×に変化*/  
+.openbtn1 span{
+  display: inline-block;
+  transition: all .4s;
+  position: absolute;
+  left: 14px;
+  height: 3px;
+  border-radius: 2px;
+background-color: rgb(0, 8, 255);
+  width: 45%;
+  
+}
+
+.openbtn1 span:nth-of-type(1) {
+top:15px; 
+}
+
+.openbtn1 span:nth-of-type(2) {
+top:23px;
+}
+
+.openbtn1 span:nth-of-type(3) {
+top:31px;
+}
+
+.openbtn1.active span:nth-of-type(1) {
+  top: 18px;
+  left: 18px;
+  transform: translateY(6px) rotate(-45deg);
+  width: 30%;
+}
+
+.openbtn1.active span:nth-of-type(2) {
+opacity: 0;
+}
+
+.openbtn1.active span:nth-of-type(3){
+  top: 30px;
+  left: 18px;
+  transform: translateY(-6px) rotate(45deg);
+  width: 30%;
+}
+
+
+
+
+/*========= ナビゲーションのためのCSS ===============*/
+
+/*========= レイアウトのためのCSS ===============*/
+
+.lead{
+padding: 50px 20px;
+}
+
+
+
+  
+
+
+
+
+
+
+
+.fadeUp {
+  animation-name:fadeUpAnime;
+  animation-duration:0.5s;
+  animation-fill-mode:forwards;
+  opacity: 0;
+  }
+  
+  @keyframes fadeUpAnime{
+    from {
+      opacity: 0;
+      transform: translateY(100px);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+
+
+
+
+
+  .inner2{
+    z-index:9999;
+    margin-top: 100vh;
+    margin-bottom: 30vh;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    padding: 0px 0px 0px;
+    border-radius: 50% 10% / 10% 50%;
+    background-color:#ffffff;
+    text-shadow: 
+    .1vw 0vw .25vw #28D7FE, .2vw 0vw .25vw #28D7FE, .4vw 0vw .25vw #28D7FE, 
+    .1vw 0vw .1vw #1041FF, .2vw 0vw 0vw #1041FF, .4vw 0vw 0vw #1041FF,
+    .1vw 0vw .1vw #1041FF, .2vw 0vw .1vw #1041FF, .4vw 0vw 0vw #1041FF,
+    .1vw 0vw .8vw #1041FF, .2vw 0vw .8vw #1041FF, .4vw 0vw .8vw #1041FF, .2vw 0vw .5vw #1041FF,
+    .1vw 0vw .5vw #1041FF, .2vw 0vw .5vw #1041FF, .4vw 0vw .5vw #1041FF, 
+    .1vw 0vw 10vw #1041FF, .2vw 0vw 10vw #1041FF, .4vw 0vw 10vw #1041FF;
+    color: #28D7FE;
+    box-shadow:
+            0 0 .5rem rgb(0, 34, 255),
+            inset 0 0 .5rem rgba(0, 255, 217, 0.759),
+            0 0 2rem var(--neon-border-color),
+            inset 0 0 2rem var(--neon-border-color),
+            0 0 4rem var(--neon-border-color),
+            inset 0 0 4rem var(--neon-border-color); 
+  }
+
+  .inner2 h3{
+    font-size:40px;
+    text-align:center
+  }
+
+  .inner2 li a{
+
+    color:#ffffff;
+    display: block;
+    font-size:2.5em;
+    text-align:center;
+    line-height:1;
+    text-transform: uppercase;
+    z-index: 999;
+    letter-spacing: 0.1em;
+    -webkit-text-stroke-width: 1.5px;
+    margin-left:0%;
+    margin-top: 1%;
+    
+  }
+
+ .inner2 nav a:hover{
+      margin-right: 20px;
+ }
+  
+  .inner2 p{
+    text-align:center;
+    font-size:12px;
+    margin-top:20px;
+
+  }
+
+  .inner2 h3 a{
+    text-decoration:none;
+    color:#fff7f7;
+    text-align: center;
+   
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+/* 
+  .neon-circle {
+    -moz-box-shadow:  inset 0px 0px 98px 8px rgb(233, 233, 233);
+    -webkit-box-shadow: inset 0px 0px 98px 8px rgb(231, 231, 231);
+    
+    background: 0;
+    border-radius: 13vw;
+    box-shadow: 0px 0px 0px 8px rgb(0, 0, 0), 0px 0px 8px 10px #00ff2f, inset 0px 0px 8px 4px rgb(0, 0, 0), 0px 0px 98px 8px rgb(245, 245, 245), inset 0px 0px 98px 8px rgb(255, 255, 255);
+    height: 60vw;
+    margin-top: 20vh;
+    margin-left: 38vw;
+    margin-right: -5vw;
+    
+    width: 20vw;
+  } */
