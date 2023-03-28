@@ -270,7 +270,7 @@ a.btn-flat:hover:before {
   -webkit-transform: translateX(-15%) translateY(50%) rotate(45deg);
   transform: translateX(-4%) translateY(50%) rotate(45deg);
 }
-/* @media screen and (max-width:480px) {
+ @media screen and (max-width:480px) {
  
 	a.btn-flat:hover:before  {
 		
@@ -278,11 +278,11 @@ a.btn-flat:hover:before {
 		content: "";
 		-webkit-transition: all 0.5s ease-in-out;
 		transition: all 0.5s ease-in-out;
-		-webkit-transform: translateX(-20%) translateY(-90%) rotate(60deg);
-		transform: translateX(-20%) translateY(-90%) rotate(50deg);
+		-webkit-transform: translateX(-70%) translateY(-20%) rotate(60deg);
+		transform: translateX(-20%) translateY(-20%) rotate(50deg);
 	  
 		
 	}
  
 }
- */
+ 
