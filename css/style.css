@@ -258,8 +258,8 @@ a.btn-flat:before {
 		content: "";
 		-webkit-transition: all 0.5s ease-in-out;
 		transition: all 0.5s ease-in-out;
-	-webkit-transform: translateX(20%) translateY(60%) rotate(60deg);
-		transform: translateX(30%) translateY(70%) rotate(50deg);
+	-webkit-transform: translateX(100%) translateY(100%) rotate(60deg);
+		transform: translateX(100%) translateY(100%) rotate(50deg);
 	  
 		background: #000000;
 	}
@@ -274,8 +274,8 @@ a.btn-flat:hover:before {
  
 	/*　この位置に記述する　*/
 	a.btn-flat:hover:before  {
-		-webkit-transform: translateX(50%) translateY(70%) rotate(35deg);
-  transform: translateX(80%) translateY(70%) rotate(95deg);
+		-webkit-transform: translateX(100%) translateY(100%) rotate(35deg);
+  transform: translateX(100%) translateY(100%) rotate(95deg);
 	  
 	}
  
