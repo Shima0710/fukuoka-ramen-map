@@ -276,8 +276,8 @@ a.btn-flat:hover:before {
  
 	/*　この位置に記述する　*/
 	a.btn-flat:hover:before  {
-		-webkit-transform: translateX(-45%) translateY(90%) rotate(95deg);
-  transform: translateX(-45%) translateY(90%) rotate(95deg);
+		-webkit-transform: translateX(-45%) translateY(50%) rotate(95deg);
+  transform: translateX(-45%) translateY(50%) rotate(95deg);
 	  
 	}
  
