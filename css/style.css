@@ -255,13 +255,15 @@ a.btn-flat:before {
 	a.btn-flat:before  {
 		
 	  
+
+	  
 		content: "";
 		-webkit-transition: all 0.5s ease-in-out;
 		transition: all 0.5s ease-in-out;
 		-webkit-transform: translateX(-80%) translateY(-60%) rotate(60deg);
-		transform: translateX(0%) translateY(-0%) rotate(50deg);
+		transform: translateX(-90%) translateY(-0%) rotate(50deg);
 	  
-		background: #d0cdcd;
+		background: #000000;
 	}
  
 }
