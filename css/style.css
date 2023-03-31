@@ -259,7 +259,7 @@ a.btn-flat:before {
 		-webkit-transition: all 0.5s ease-in-out;
 		transition: all 0.5s ease-in-out;
 		-webkit-transform: translateX(-100%) translateY(-95%) rotate(45deg);
-		transform: translateX(-100%) translateY(-95%) rotate(45deg);
+		transform: translateX(-20%) translateY(-95%) rotate(45deg);
 	  
 		background: #000000;
 	}
