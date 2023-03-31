@@ -244,8 +244,8 @@ a.btn-flat:before {
   content: "";
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
-  -webkit-transform: translateX(-20%) translateY(-50%) rotate(0deg);
-  transform: translateX(-20%) translateY(-50%) rotate(0deg);
+  -webkit-transform: translateX(-0%) translateY(-50%) rotate(0deg);
+  transform: translateX(-0%) translateY(-50%) rotate(0deg);
 
   background: #000000;
 }
@@ -258,8 +258,8 @@ a.btn-flat:before {
 		content: "";
 		-webkit-transition: all 0.5s ease-in-out;
 		transition: all 0.5s ease-in-out;
-		-webkit-transform: translateX(-0%) translateY(-00%) rotate(90deg);
-		transform: translateX(-0%) translateY(-0%) rotate(90deg);
+		-webkit-transform: translateX(-0%) translateY(-25%) rotate(45deg);
+		transform: translateX(-0%) translateY(-25%) rotate(45deg);
 	  
 		background: #000000;
 	}
@@ -270,19 +270,19 @@ a.btn-flat:hover:before {
   -webkit-transform: translateX(-15%) translateY(50%) rotate(45deg);
   transform: translateX(-4%) translateY(50%) rotate(45deg);
 }
- @media screen and (max-width:480px) {
+@media screen and (max-width:480px) {
  
+	/*　この位置に記述する　*/
 	a.btn-flat:hover:before  {
 		
 	  
 		content: "";
 		-webkit-transition: all 0.5s ease-in-out;
 		transition: all 0.5s ease-in-out;
-		-webkit-transform: translateX(-70%) translateY(-20%) rotate(60deg);
-		transform: translateX(-20%) translateY(-20%) rotate(50deg);
+		-webkit-transform: translateX(-20%) translateY(-90%) rotate(60deg);
+		transform: translateX(-20%) translateY(-90%) rotate(50deg);
 	  
 		
 	}
  
 }
- 
