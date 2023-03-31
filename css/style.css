@@ -258,8 +258,8 @@ a.btn-flat:before {
 		content: "";
 		-webkit-transition: all 0.5s ease-in-out;
 		transition: all 0.5s ease-in-out;
-		-webkit-transform: translateX(-10%) translateY(-100%) rotate(45deg);
-		transform: translateX(-10%) translateY(-100%) rotate(45deg);
+		-webkit-transform: translateX(-5%) translateY(-50%) rotate(45deg);
+		transform: translateX(-5%) translateY(-50%) rotate(45deg);
 	  
 	}
  
@@ -278,8 +278,8 @@ a.btn-flat:hover:before {
 		content: "";
 		-webkit-transition: all 0.5s ease-in-out;
 		transition: all 0.5s ease-in-out;
-		-webkit-transform: translateX(-15%) translateY(90%) rotate(45deg);
-		transform: translateX(-4%) translateY(90%) rotate(45deg);
+		-webkit-transform: translateX(-6.5%) translateY(90%) rotate(45deg);
+		transform: translateX(-2%) translateY(90%) rotate(45deg);
 	  
 		
 	}
