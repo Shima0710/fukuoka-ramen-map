@@ -244,8 +244,8 @@ a.btn-flat:before {
   content: "";
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
-  -webkit-transform: translateX(-0%) translateY(-50%) rotate(0deg);
-  transform: translateX(-0%) translateY(-50%) rotate(0deg);
+  -webkit-transform: translateX(-10%) translateY(-50%) rotate(0deg);
+  transform: translateX(-10%) translateY(-50%) rotate(0deg);
 
   background: #000000;
 }
