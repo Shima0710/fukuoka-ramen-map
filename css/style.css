@@ -267,8 +267,8 @@ a.btn-flat:before {
 }
 
 a.btn-flat:hover:before {
-  -webkit-transform: translateX(-15%) translateY(50%) rotate(45deg);
-  transform: translateX(-15%) translateY(50%) rotate(45deg);
+  -webkit-transform: translateX(-75%) translateY(50%) rotate(45deg);
+  transform: translateX(-75%) translateY(50%) rotate(45deg);
 }
 @media screen and (max-width:480px) {
  
