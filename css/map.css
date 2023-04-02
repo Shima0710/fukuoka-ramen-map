@@ -20,7 +20,7 @@ body {
 
 
 #map{
-  margin-top: 30px;
+  margin-top: 0px;
 
 }
 
@@ -29,7 +29,7 @@ body {
  
 	/*　この位置に記述する　*/
 	#map {
-    top: 0px;
+    top: 10px;
 	
 	}
  
