@@ -286,7 +286,9 @@ a.btn-flat:hover:before {
  
 }
 
-  
+ a{
+	text-decoration: none;
+}  
   
   
   .m_btn {
