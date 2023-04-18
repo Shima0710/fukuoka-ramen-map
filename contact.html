@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Contact Us</h1>
+        <?php
+        if ($_SERVER['REQUEST_METHOD'] === 'GET') {
+            echo '<div class="form-container">';
+            echo '<form method="post" action="index.php">';
+            echo '<label for="name">Name</label>';
+            echo '<input type="text" name="name" id="name" required>';
+            echo '<label for="email">Email</label>';
+            echo '<input type="email" name="email" id="email" required>';
+            echo '<label for="message">Message</label>';
+            echo '<textarea name="message" id="message" rows="5" required></textarea>';
+            echo '<input type="submit" name="submit" value="Submit">';
+            echo '</form>';
+            echo '</div>';
+        } elseif ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submit'])) {
+            $name = $_POST['name'];
+            $email = $_POST['email'];
+            $message = $_POST['message'];
+
+            // 確認画面に渡すデータをセット
+            $_SESSION['name'] = $name;
+            $_SESSION['email'] = $email;
+            $_SESSION['message'] = $message;
+
+            // 確認画面にリダイレクト
+            header('Location: confirmation.php');
+            exit();
+        }
+        ?>
+    </div>
+</body>
+</html>
